@@ -70,6 +70,13 @@ For Linux, execute: **python3 (...).py**
 10. Quantitatively evaluate the False Match Rate (FMR) and False Non-Match Rate (FNMR): **python "./main/main_PredictiveParity.py"**
 11. Correlation analysis of age for misidentification pairs: **python "./main/main_AnalysisAge.py"**
 12. Quantify misidentification pairs of same/different gender: **python "./main/main_AnalysisGender.py"**
+## Example Results
+### User Recognition (Training: walk-1. Testing: walk2.)
+| **Baseline Method**              | **IMUZ\-Left** | **IMUZ\-Center** | **IMUZ\-Right** |
+|:--------------------------------:|:--------------:|:----------------:|:---------------:|
+| Combined Feature \+ KNN          | 80\.66\%      | 79\.72\%        | 75\.74\%       |
+| Original Signal \+ InceptionTime | 81\.02\%      | 84\.86\%        | 78\.92\%       |
+| HYDRA                            | **95\.26\%**  | **94\.85\%**    | **92\.79\%**   |
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
 ## Authors and acknowledgment
