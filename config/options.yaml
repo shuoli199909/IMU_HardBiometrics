@@ -1,0 +1,17 @@
+# Parameters for the experiments.
+# author: Shuo Li
+# date: 2024/01/29
+
+OU_ISIR_Inertial_Sensor:  # OU_ISIR_Inertial_Sensor dataset.
+  name_dataset: 'OU_ISIR_Inertial_Sensor'  #  Name of the dataset.
+  url: http://www.am.sanken.osaka-u.ac.jp/BiometricDB/InertialGait.html  # Dataset description.
+  dir_dataset: 'C:/Users/hh528/OneDrive - ETH Zurich/shuoli/ethz/master_thesis/dataset/OU-IneritialGaitData'  # Directory of the dataset.
+  dir_info: 'C:/Users/hh528/OneDrive - ETH Zurich/shuoli/ethz/master_thesis/dataset/OU-IneritialGaitData/Protocols/IDGenderAgelist.csv'  #  Directory of the ID-Age-Gender list.
+  seed: 2024  # Random seed for reproduction.
+  type_imu: 'manual_IMUZLeft'  # IMU data type. Can be viewed as sub-datasets. ['auto_IMUZCenter', 'manual_IMUZCenter', 'manual_IMUZLeft', 'manual_IMUZRight'].
+  condition: 'all'  #  Default walking condition. Might be modified in the experiments. [0, 1, 'all'].
+  len_segment: 300  # Length of data segments for pre-processing.
+  len_slide: 150  # Length of moving the sliding window.
+  delay_max_AutoCorrFeature: 150  # Maximum time delay for auto-correlation features (number of frames).
+  device: 'cuda:0'  # Device for DL models.
+  method: 'combined'  # Selected algorithm for evaluation. ['conbined', 'hydra', 'inception'].
