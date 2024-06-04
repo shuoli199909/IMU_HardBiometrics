@@ -1,4 +1,5 @@
 # IMU_HardBiometrics
+
 ## Introduction
 This project provides the code for the experiments of hard biometrics based on IMU gait sequences. It serves as an important part of the author's master thesis (30ECTS) in ETH Zurich.
 ## Summary
